@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Yoas Paul-Christ — Développeur Full-Stack / Designer UI-UX, BTS SIO SLAM, Île-de-France."
+    />
+    <title>Yoas Paul-Christ · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#accueil">YP<span class="logo-dot">.</span>SYS</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-principale"
+        id="nav-toggle"
+      >
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav-principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#formation">Formation</a>
+        <a href="#experience">Expérience</a>
+        <a href="#veille">Veille tech</a>
+        <a href="#assistant">Assistant</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="accueil" class="section hero">
+        <div class="hero__glow"></div>
+        <p class="hero__eyebrow">Identité numérique · Full-stack</p>
+        <h1 class="hero__title">
+          <span class="hero__name" data-text="YOAS PAUL-CHRIST">YOAS PAUL-CHRIST</span>
+        </h1>
+        <p class="hero__role">Développeur Full-Stack / Designer UI-UX</p>
+        <p class="hero__tagline">
+          Interfaces claires, produits web fiables, veille technologique intégrée à mon parcours.
+        </p>
+        <div class="hero__meta">
+          <div class="glass-card">
+            <span class="meta-label">Localisation</span>
+            <span class="meta-value">Île-de-France, France</span>
+          </div>
+          <div class="glass-card">
+            <span class="meta-label">Statut</span>
+            <span class="meta-value">Étudiant BTS SIO SLAM (2024–2026)</span>
+          </div>
+          <div class="glass-card">
+            <span class="meta-label">Disponibilité</span>
+            <span class="meta-value accent">Immédiate</span>
+          </div>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Me contacter</a>
+          <a class="btn btn--ghost" href="#veille">Voir la veille IA</a>
+        </div>
+      </section>
+
+      <section id="a-propos" class="section">
+        <div class="section__inner">
+          <h2 class="section__title">À propos</h2>
+          <p class="section__lead">
+            Je conçois et déploie des expériences web modernes : de l’interface utilisateur au back-end,
+            avec une attention particulière à la performance, au référencement et à la sécurité de base.
+          </p>
+          <div class="grid-2">
+            <div class="glass-panel">
+              <h3 class="panel-title">Approche</h3>
+              <p>
+                Méthodique et orienté produit : je relie design, code et contraintes métier pour livrer des
+                sites maintenables et évolutifs.
+              </p>
+            </div>
+            <div class="glass-panel">
+              <h3 class="panel-title">Domaines</h3>
+              <p>
+                Sites vitrines et e-commerce, intégration de paiements (Stripe), optimisation SEO,
+                support utilisateur et automatisation de tâches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="competences" class="section section--alt">
+        <div class="section__inner">
+          <h2 class="section__title">Compétences</h2>
+          <p class="section__lead">
+            Stack web et compétences transverses — du front au support, en passant par la sécurité de
+            base.
+          </p>
+          <ul class="skills">
+            <li class="skill glass-card">
+              <span class="skill__name">HTML / CSS</span>
+              <div class="skill__bar" data-level="95"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">JavaScript</span>
+              <div class="skill__bar" data-level="88"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">PHP &amp; MySQL</span>
+              <div class="skill__bar" data-level="85"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">UI / UX design</span>
+              <div class="skill__bar" data-level="90"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">SEO &amp; e-commerce</span>
+              <div class="skill__bar" data-level="82"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">Cybersécurité de base</span>
+              <div class="skill__bar" data-level="72"><span></span></div>
+            </li>
+            <li class="skill glass-card">
+              <span class="skill__name">Support informatique</span>
+              <div class="skill__bar" data-level="86"><span></span></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="formation" class="section">
+        <div class="section__inner">
+          <h2 class="section__title">Formation</h2>
+          <p class="section__lead">Parcours scolaire et formation en cours.</p>
+          <ol class="timeline">
+            <li class="timeline__item glass-panel">
+              <span class="timeline__date">2024 — 2026 (en cours)</span>
+              <h3 class="timeline__title">BTS SIO — option SLAM</h3>
+              <p>Solutions logicielles et applications métiers — développement et intégration.</p>
+            </li>
+            <li class="timeline__item glass-panel">
+              <span class="timeline__date">2024</span>
+              <h3 class="timeline__title">Baccalauréat Littéraire</h3>
+              <p>Formation générale, culture et méthodologie du travail écrit et analytique.</p>
+            </li>
+            <li class="timeline__item glass-panel">
+              <span class="timeline__date">2021</span>
+              <h3 class="timeline__title">Brevet des collèges</h3>
+              <p>Base solide pour la poursuite d’études au lycée.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--alt">
+        <div class="section__inner">
+          <h2 class="section__title">Expérience professionnelle</h2>
+          <p class="section__lead">Missions en entreprise et alternance / stages.</p>
+          <div class="exp-grid">
+            <article class="exp-card glass-panel">
+              <header class="exp-card__head">
+                <h3 class="exp-card__company">UGOP</h3>
+                <span class="exp-card__year">2025</span>
+              </header>
+              <ul class="exp-card__list">
+                <li>Maintenance de sites web</li>
+                <li>SEO et optimisation</li>
+                <li>Intégration Stripe e-commerce</li>
+                <li>Travail en équipe communication</li>
+                <li>Hébergement et sauvegardes</li>
+              </ul>
+            </article>
+            <article class="exp-card glass-panel">
+              <header class="exp-card__head">
+                <h3 class="exp-card__company">SAS MALAR</h3>
+                <span class="exp-card__year">2025</span>
+              </header>
+              <ul class="exp-card__list">
+                <li>Création site e-commerce complet</li>
+                <li>Sécurisation du site</li>
+                <li>Automatisation de tâches</li>
+                <li>Support informatique</li>
+              </ul>
+            </article>
+            <article class="exp-card glass-panel">
+              <header class="exp-card__head">
+                <h3 class="exp-card__company">AIRTEL</h3>
+                <span class="exp-card__year">2024</span>
+              </header>
+              <ul class="exp-card__list">
+                <li>Support technique informatique</li>
+                <li>Installation réseau</li>
+                <li>Dépannage matériel et logiciel</li>
+                <li>Gestion de tickets</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="veille" class="section veille">
+        <div class="section__inner">
+          <div class="veille__header">
+            <div>
+              <h2 class="section__title">Actualités technologiques / IA</h2>
+              <p class="section__lead veille__intro">
+                Veille synthétique sur l’intelligence artificielle, la cybersécurité et les innovations —
+                données illustratives mises à jour dynamiquement.
+              </p>
+            </div>
+            <div class="veille__controls">
+              <span class="veille__status" id="veille-status">
+                <span class="pulse"></span> Flux actif
+              </span>
+              <button type="button" class="btn btn--small" id="shuffle-news">
+                Actualiser le flux
+              </button>
+            </div>
+          </div>
+          <div class="veille__filters" role="tablist" aria-label="Filtrer par thème">
+            <button type="button" class="filter-btn is-active" data-filter="tous">Tous</button>
+            <button type="button" class="filter-btn" data-filter="ia">Intelligence artificielle</button>
+            <button type="button" class="filter-btn" data-filter="cyber">Cybersécurité</button>
+            <button type="button" class="filter-btn" data-filter="innov">Innovations tech</button>
+            <button type="button" class="filter-btn" data-filter="risques">Risques &amp; avancées IA</button>
+          </div>
+          <div class="news-grid" id="news-grid"></div>
+        </div>
+      </section>
+
+      <section id="assistant" class="section section--alt">
+        <div class="section__inner assistant">
+          <h2 class="section__title">Assistant rapide</h2>
+          <p class="section__lead">
+            Posez une question simple — réponses préprogrammées (démonstration).
+          </p>
+          <div class="assistant__box glass-panel">
+            <div class="assistant__chips">
+              <button type="button" class="chip" data-q="qui">Qui es-tu ?</button>
+              <button type="button" class="chip" data-q="skills">Tes compétences ?</button>
+              <button type="button" class="chip" data-q="parcours">Ton parcours ?</button>
+            </div>
+            <div class="assistant__io">
+              <label class="sr-only" for="assistant-input">Votre question</label>
+              <input
+                type="text"
+                id="assistant-input"
+                class="assistant__input"
+                placeholder="Ex. : Qui es-tu ?"
+                autocomplete="off"
+              />
+              <button type="button" class="btn btn--primary" id="assistant-send">Envoyer</button>
+            </div>
+            <div class="assistant__reply" id="assistant-reply" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__inner contact">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__lead">
+            Disponibilité <strong class="accent">immédiate</strong> — échangeons sur votre projet ou une
+            opportunité en Île-de-France ou en remote.
+          </p>
+          <div class="contact__card glass-panel">
+            <p><strong>Yoas Paul-Christ</strong></p>
+            <p>Développeur Full-Stack / Designer UI-UX</p>
+            <p class="contact__hint">
+              Remplacez l’adresse ci-dessous par votre e-mail professionnel avant mise en ligne.
+            </p>
+            <a class="contact__mail" href="mailto:contact@exemple.fr">PAULCHRISTYOAS@GMAIL.COM</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Yoas Paul-Christ — Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
