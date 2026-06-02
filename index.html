@@ -37,6 +37,7 @@
         <a href="#competences">Compétences</a>
         <a href="#formation">Formation</a>
         <a href="#experience">Expérience</a>
+        <a href="#projets">Projets</a>
         <a href="#veille">Veille tech</a>
         <a href="#assistant">Assistant</a>
         <a href="#contact">Contact</a>
@@ -70,7 +71,8 @@
         </div>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#contact">Me contacter</a>
-          <a class="btn btn--ghost" href="#veille">Voir la veille IA</a>
+          <a class="btn btn--ghost" href="assets/cv-yoas-paul-christ.pdf" download>Télécharger mon CV</a>
+          <a class="btn btn--ghost" href="#projets">Voir mes projets</a>
         </div>
       </section>
 
@@ -143,8 +145,23 @@
       <section id="formation" class="section">
         <div class="section__inner">
           <h2 class="section__title">Formation</h2>
-          <p class="section__lead">Parcours scolaire et formation en cours.</p>
+          <p class="section__lead">Parcours scolaire, certification et formation en cours.</p>
           <ol class="timeline">
+            <li class="timeline__item glass-panel">
+              <span class="timeline__date">2025</span>
+              <h3 class="timeline__title">Certification Développement Web</h3>
+              <p>
+                Formation certifiante couvrant le développement web front-end et back-end, les bonnes
+                pratiques et la mise en production.
+              </p>
+              <a
+                class="doc-link"
+                href="assets/certificat-dev-web.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le certificat (PDF)</a
+              >
+            </li>
             <li class="timeline__item glass-panel">
               <span class="timeline__date">2024 — 2026 (en cours)</span>
               <h3 class="timeline__title">BTS SIO — option SLAM</h3>
@@ -181,6 +198,13 @@
                 <li>Travail en équipe communication</li>
                 <li>Hébergement et sauvegardes</li>
               </ul>
+              <a
+                class="doc-link"
+                href="assets/lettre-recommandation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lettre de recommandation (PDF)</a
+              >
             </article>
             <article class="exp-card glass-panel">
               <header class="exp-card__head">
@@ -210,7 +234,73 @@
         </div>
       </section>
 
-      <section id="veille" class="section veille">
+      <section id="projets" class="section">
+        <div class="section__inner">
+          <h2 class="section__title">Projets</h2>
+          <div class="project-grid">
+            <article class="project-card glass-panel">
+              <header class="project-card__head">
+                <h3 class="project-card__title">Site web UGOP</h3>
+                <span class="project-card__year">2025</span>
+              </header>
+              <p class="project-card__desc">
+                Site vitrine de l’association UGOP (Pavillon Culturel, 12ᵉ arrondissement de Paris) :
+                animation culturelle, radio citoyenne, ateliers et location d’espaces. Maintenance,
+                optimisation SEO et intégration e-commerce Stripe.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>SEO</li>
+                <li>Stripe</li>
+                <li>PHP</li>
+                <li>E-commerce</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="btn btn--small"
+                  href="https://ugop.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir le site</a
+                >
+                <a
+                  class="btn btn--ghost btn--small-link"
+                  href="assets/lettre-recommandation.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Recommandation</a
+                >
+              </div>
+            </article>
+            <article class="project-card glass-panel">
+              <header class="project-card__head">
+                <h3 class="project-card__title">Goshen Services</h3>
+                <span class="project-card__year">2025</span>
+              </header>
+              <p class="project-card__desc">
+                Application de gestion de flotte de véhicules de location — suivi des véhicules,
+                disponibilités et pilotage opérationnel.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>WinForms</li>
+                <li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="btn btn--small"
+                  href="https://github.com/YOASKING/goshenservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="veille" class="section section--alt veille">
         <div class="section__inner">
           <div class="veille__header">
             <div>
@@ -240,7 +330,7 @@
         </div>
       </section>
 
-      <section id="assistant" class="section section--alt">
+      <section id="assistant" class="section">
         <div class="section__inner assistant">
           <h2 class="section__title">Assistant rapide</h2>
           <p class="section__lead">
@@ -251,6 +341,7 @@
               <button type="button" class="chip" data-q="qui">Qui es-tu ?</button>
               <button type="button" class="chip" data-q="skills">Tes compétences ?</button>
               <button type="button" class="chip" data-q="parcours">Ton parcours ?</button>
+              <button type="button" class="chip" data-q="projets">Tes projets ?</button>
             </div>
             <div class="assistant__io">
               <label class="sr-only" for="assistant-input">Votre question</label>
@@ -272,16 +363,29 @@
         <div class="section__inner contact">
           <h2 class="section__title">Contact</h2>
           <p class="section__lead">
-            Disponibilité <strong class="accent">immédiate</strong> — échangeons sur votre projet ou une
-            opportunité en Île-de-France ou en remote.
+            Disponibilité <strong class="accent">immédiate</strong>.
           </p>
           <div class="contact__card glass-panel">
             <p><strong>Yoas Paul-Christ</strong></p>
             <p>Développeur Full-Stack / Designer UI-UX</p>
-            <p class="contact__hint">
-              Remplacez l’adresse ci-dessous par votre e-mail professionnel avant mise en ligne.
-            </p>
-            <a class="contact__mail" href="mailto:contact@exemple.fr">PAULCHRISTYOAS@GMAIL.COM</a>
+            <a class="contact__mail" href="mailto:paulchristyoas@gmail.com">paulchristyoas@gmail.com</a>
+            <div class="contact__docs">
+              <a class="doc-link" href="assets/cv-yoas-paul-christ.pdf" download>Télécharger mon CV</a>
+              <a
+                class="doc-link"
+                href="assets/certificat-dev-web.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Certificat dev web</a
+              >
+              <a
+                class="doc-link"
+                href="assets/lettre-recommandation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lettre de recommandation</a
+              >
+            </div>
           </div>
         </div>
       </section>

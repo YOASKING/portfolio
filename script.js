@@ -275,6 +275,11 @@
       text:
         "Mon parcours : support et réseau chez AIRTEL (2024), création e-commerce et automatisation chez SAS MALAR (2025), puis maintenance web, SEO et Stripe chez UGOP (2025). Formation : BTS SIO SLAM en cours.",
     },
+    projets: {
+      keywords: ["projet", "portfolio", "réalisation", "site", "ugop"],
+      text:
+        "Mes projets : le site UGOP (ugop.fr) — maintenance, SEO et e-commerce Stripe — et Goshen Services, application de gestion de flotte de véhicules de location (github.com/YOASKING/goshenservices).",
+    },
   };
 
   function answerFromText(q) {
@@ -290,6 +295,9 @@
     }
     if (/parcours|expérience|experience|stage|cv|formation/.test(lower)) {
       return ANSWERS.parcours.text;
+    }
+    if (/projet|portfolio|réalisation|realisation|ugop|site/.test(lower)) {
+      return ANSWERS.projets.text;
     }
     return (
       "Je n’ai pas de réponse prévue pour cette formulation. Essayez : « Qui es-tu ? », « Tes compétences ? » ou « Ton parcours ? »."
@@ -326,6 +334,7 @@
       if (key === "qui" && assistantInput) assistantInput.value = "Qui es-tu ?";
       if (key === "skills" && assistantInput) assistantInput.value = "Tes compétences ?";
       if (key === "parcours" && assistantInput) assistantInput.value = "Ton parcours ?";
+      if (key === "projets" && assistantInput) assistantInput.value = "Tes projets ?";
       assistantSubmit();
     });
   });
